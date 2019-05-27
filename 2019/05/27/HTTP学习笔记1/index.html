@@ -69,20 +69,20 @@
 
 
 
-<meta name="description" content="1.网络模型介绍  物理层主要作用是定义物理设备如何传输数据 数据链路层在通信的实体间建立数据链路连接 网络层为数据在结点之间传输创建逻辑链路  1.传输层（TCP/IP，UDP）向用户提供可靠的端到端（End-to-End）服务 传输层向高层屏蔽了下层数据通信的细节 2.应用层为应用软件提供了很多服务 构建与TCP协议之上 屏蔽网络传输相关细节 2.HTTP三次握手  3.URI，URL和URN">
+<meta name="description" content="1.网络模型介绍  物理层主要作用是定义物理设备如何传输数据 数据链路层在通信的实体间建立数据链路连接 网络层为数据在结点之间传输创建逻辑链路  1.传输层（TCP/IP，UDP）向用户提供可靠的端到端（End-to-End）服务 传输层向高层屏蔽了下层数据通信的细节 2.应用层为应用软件提供了很多服务 构建与TCP协议之上 屏蔽网络传输相关细节 2.HTTP三次握手  3.URI，URL和UR">
 <meta property="og:type" content="article">
 <meta property="og:title" content="HTTP学习笔记1">
 <meta property="og:url" content="shileicarlos.site/2019/05/27/HTTP学习笔记1/index.html">
 <meta property="og:site_name" content="师磊的学习笔记">
-<meta property="og:description" content="1.网络模型介绍  物理层主要作用是定义物理设备如何传输数据 数据链路层在通信的实体间建立数据链路连接 网络层为数据在结点之间传输创建逻辑链路  1.传输层（TCP/IP，UDP）向用户提供可靠的端到端（End-to-End）服务 传输层向高层屏蔽了下层数据通信的细节 2.应用层为应用软件提供了很多服务 构建与TCP协议之上 屏蔽网络传输相关细节 2.HTTP三次握手  3.URI，URL和URN">
+<meta property="og:description" content="1.网络模型介绍  物理层主要作用是定义物理设备如何传输数据 数据链路层在通信的实体间建立数据链路连接 网络层为数据在结点之间传输创建逻辑链路  1.传输层（TCP/IP，UDP）向用户提供可靠的端到端（End-to-End）服务 传输层向高层屏蔽了下层数据通信的细节 2.应用层为应用软件提供了很多服务 构建与TCP协议之上 屏蔽网络传输相关细节 2.HTTP三次握手  3.URI，URL和UR">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://github.com/carlosshilei/MarkdownPictures/blob/master/%E6%89%B9%E6%B3%A8%202019-05-27%20203835.png?raw=true">
 <meta property="og:image" content="https://github.com/carlosshilei/MarkdownPictures/blob/master/%E6%89%B9%E6%B3%A8%202019-05-27%20211202.png?raw=true">
 <meta property="og:image" content="https://github.com/carlosshilei/MarkdownPictures/blob/master/HTTP%20message.png?raw=true">
-<meta property="og:updated_time" content="2019-05-27T13:59:59.451Z">
+<meta property="og:updated_time" content="2019-05-27T14:01:56.021Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="HTTP学习笔记1">
-<meta name="twitter:description" content="1.网络模型介绍  物理层主要作用是定义物理设备如何传输数据 数据链路层在通信的实体间建立数据链路连接 网络层为数据在结点之间传输创建逻辑链路  1.传输层（TCP/IP，UDP）向用户提供可靠的端到端（End-to-End）服务 传输层向高层屏蔽了下层数据通信的细节 2.应用层为应用软件提供了很多服务 构建与TCP协议之上 屏蔽网络传输相关细节 2.HTTP三次握手  3.URI，URL和URN">
+<meta name="twitter:description" content="1.网络模型介绍  物理层主要作用是定义物理设备如何传输数据 数据链路层在通信的实体间建立数据链路连接 网络层为数据在结点之间传输创建逻辑链路  1.传输层（TCP/IP，UDP）向用户提供可靠的端到端（End-to-End）服务 传输层向高层屏蔽了下层数据通信的细节 2.应用层为应用软件提供了很多服务 构建与TCP协议之上 屏蔽网络传输相关细节 2.HTTP三次握手  3.URI，URL和UR">
 <meta name="twitter:image" content="https://github.com/carlosshilei/MarkdownPictures/blob/master/%E6%89%B9%E6%B3%A8%202019-05-27%20203835.png?raw=true">
 
 
@@ -335,7 +335,8 @@
       
 
       
-        <h2 id="1-网络模型介绍"><a href="#1-网络模型介绍" class="headerlink" title="1.网络模型介绍"></a>1.网络模型介绍</h2><p><img src="https://github.com/carlosshilei/MarkdownPictures/blob/master/%E6%89%B9%E6%B3%A8%202019-05-27%20203835.png?raw=true" alt="网络模型"></p>
+        <a id="more"></a>
+<h2 id="1-网络模型介绍"><a href="#1-网络模型介绍" class="headerlink" title="1.网络模型介绍"></a>1.网络模型介绍</h2><p><img src="https://github.com/carlosshilei/MarkdownPictures/blob/master/%E6%89%B9%E6%B3%A8%202019-05-27%20203835.png?raw=true" alt="网络模型"></p>
 <ul>
 <li>物理层主要作用是定义物理设备如何传输数据</li>
 <li>数据链路层在通信的实体间建立数据链路连接</li>
